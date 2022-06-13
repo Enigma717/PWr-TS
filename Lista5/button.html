@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Technologie Sieciowe Lista 5</title>
+        <link rel="icon" href="https://media3.giphy.com/media/OfmHikVCWEFHi/giphy.gif" type="image/x-icon" />
+
+        <style>
+            body {
+            background: #00539CFF;
+            }
+            
+            h1 {
+            text-align: center;
+            }
+
+            h2 {
+                margin-left: 20px;
+            }
+
+            button {
+                margin: 10px;
+            }
+
+            @font-face {
+                font-family: 'Lato';
+                src: url('https://fonts.google.com/specimen/Lato');
+            }
+
+            .nobull {
+                list-style-type: none;
+            }
+
+            .content {
+                max-width: 500px;
+                margin: auto;
+                background: #EEA47FFF;
+                padding: 10px;
+                box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.678);
+                font-family: 'Lato';
+            }
+
+            .simpleform {
+                margin: 10px;
+                text-align: center;
+            }
+        </style>
+
+        <script>
+            function nameAlert() {
+                var name = document.getElementById("name").value;
+                var surname = document.getElementById("surname").value;
+
+                alert("Nazywasz się: " + name + " " + surname);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="content">
+            <form class="simpleform">
+                <label for="name"> Wpisz swoje imię: </label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="surname"> Wpisz swoje nazwisko: </label><br>
+                <input type="text" id="surname" name="surname"><br>
+
+                <button type="button" onclick="nameAlert()"> Wyświetl dane </button>
+            </form>
+
+            <h2> > Pozostałe podstrony: </h2>
+            <ul class="nobull">
+                <li><a href="index"> 1. Strona główna </a></li>  
+                <li><a href="header"> 2. Plik nagłówkowy </a></li>  
+                <li><a href="passion"> 3. Graphic design is my passion </a></li>  
+                <li><a href="https://github.com/Enigma717"> 4. Mój GitHub </a></li>  
+            </ul>
+        </div>
+    </body>
+</html>
+
